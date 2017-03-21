@@ -1408,6 +1408,11 @@
             <field name="custom_bytes" type="uint8_t[24]">Custom Bytes</field>
         </message>
 
+        <message id="187" name="TELEM_STATUS">
+            <description>Telemetry RSSI value</description>
+            <field name="rssi" type="uint8_t">RSSI Value</field>
+        </message>
+
         <message id="191" name="MAG_CAL_PROGRESS">
             <description>Reports progress of compass calibration.</description>
             <field name="compass_id" type="uint8_t">Compass being calibrated</field>
