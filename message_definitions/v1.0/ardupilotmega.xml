@@ -1227,6 +1227,20 @@
         <description>Telemetry RSSI value</description>
         <field name="rssi" type="uint8_t">RSSI Value</field>
     </message>
+    <message id="188" name="ROVER_LOGGER_STATUS">
+        <description> PPK and CAM Logger value</description>
+        <field name="target_system" type="uint8_t">System ID</field>
+        <field name="target_component" type="uint8_t">Component ID</field>
+        <field name="last_log" type="uint8_t">Last Log ID</field>
+        <field name="last_log_stat" type="uint8_t"> lastlog.txt status</field>
+        <field name="ppk_log" type="uint8_t">PPK log ID</field>
+        <field name="ppk_log_stat" type="uint8_t">PPK log status</field>
+        <field name="cam_log" type="uint8_t">CAM log ID</field>
+        <field name="cam_log_stat" type="uint8_t">CAM log status</field>
+        <field name="gps_fix" type="uint8_t">GPS Fix Status</field>
+        <field name="caml_ecnt" type="uint8_t">CAM File Error Count</field>
+        <field name="ppkl_ecnt" type="uint8_t">CAM File Error Count</field>
+    </message>
     <message id="191" name="MAG_CAL_PROGRESS">
       <description>Reports progress of compass calibration.</description>
       <field type="uint8_t" name="compass_id">Compass being calibrated</field>
@@ -1434,5 +1448,4 @@
       <field name="SSA" type="float">Side Slip Angle (degrees)</field>
     </message>
   </messages>
-
 </mavlink>
